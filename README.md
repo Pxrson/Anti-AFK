@@ -16,11 +16,15 @@
 
 ## Quick Start
 
+anti afk
 ```lua
 -- discord: .pxrson
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK/refs/heads/main/script",true))()
 ```
-
+copy pos
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK_CopyPos/refs/heads/main/copy%20pos.lua",true))()
+```
 ## Installation
 
 <details>
