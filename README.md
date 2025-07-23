@@ -5,10 +5,9 @@
 <p>
   <img src="https://img.shields.io/badge/Platform-Roblox-00a2ff?style=for-the-badge&logo=roblox&logoColor=white" alt="Platform">
   <img src="https://img.shields.io/badge/Language-Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Language">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
 </p>
 
-<p><em>Lightweight Roblox Lua Exploit Script</em></p>
+<p><em>Roblox Lua Exploit Script</em></p>
 
 </div>
 
