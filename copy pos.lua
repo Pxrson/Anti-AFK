@@ -8,6 +8,12 @@ local pxrson_s = {
     ts = game:GetService("TweenService")
 }
 
+local pxrson_is_mobile = game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled
+
+local pxrson_size_multiplier = pxrson_is_mobile and 0.8 or 1
+local pxrson_main_width = math.floor(260 * pxrson_size_multiplier)
+local pxrson_main_height = math.floor(120 * pxrson_size_multiplier)
+
 local pxrson_g = Instance.new("ScreenGui")
 local pxrson_m = Instance.new("Frame")
 local pxrson_uc = Instance.new("UICorner")
@@ -25,12 +31,12 @@ pxrson_m.Parent = pxrson_g
 pxrson_m.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 pxrson_m.BackgroundTransparency = 0.1
 pxrson_m.Position = UDim2.new(0.6, 0, 0.1, 0)
-pxrson_m.Size = UDim2.new(0, 260, 0, 120)
+pxrson_m.Size = UDim2.new(0, pxrson_main_width, 0, pxrson_main_height)
 
 pxrson_tb.Parent = pxrson_m
 pxrson_tb.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 pxrson_tb.BackgroundTransparency = 0.1
-pxrson_tb.Size = UDim2.new(1, 0, 0, 22)
+pxrson_tb.Size = UDim2.new(1, 0, 0, math.floor(22 * pxrson_size_multiplier))
 
 pxrson_tc.Parent = pxrson_tb
 pxrson_tc.CornerRadius = UDim.new(0, 4)
@@ -43,17 +49,17 @@ local function pxrson_l(pxrson_p)
     pxrson_x.Parent = pxrson_m
     pxrson_x.BackgroundTransparency = 1
     pxrson_x.Position = pxrson_p
-    pxrson_x.Size = UDim2.new(1, -10, 0, 18)
+    pxrson_x.Size = UDim2.new(1, -10, 0, math.floor(18 * pxrson_size_multiplier))
     pxrson_x.Font = Enum.Font.Code
     pxrson_x.TextColor3 = Color3.fromRGB(255, 255, 255)
-    pxrson_x.TextSize = 13
+    pxrson_x.TextSize = math.floor(13 * pxrson_size_multiplier)
     pxrson_x.TextXAlignment = Enum.TextXAlignment.Left
     return pxrson_x
 end
 
-pxrson_fl = pxrson_l(UDim2.new(0, 8, 0, 24))
-pxrson_tl = pxrson_l(UDim2.new(0, 8, 0, 42))
-pxrson_el = pxrson_l(UDim2.new(0, 8, 0, 60))
+pxrson_fl = pxrson_l(UDim2.new(0, 8, 0, math.floor(24 * pxrson_size_multiplier)))
+pxrson_tl = pxrson_l(UDim2.new(0, 8, 0, math.floor(42 * pxrson_size_multiplier)))
+pxrson_el = pxrson_l(UDim2.new(0, 8, 0, math.floor(60 * pxrson_size_multiplier)))
 
 local pxrson_u = game:GetService("UserInputService")
 local pxrson_d = false
@@ -106,7 +112,7 @@ pxrson_t.Size = UDim2.new(1, -16, 1, 0)
 pxrson_t.Font = Enum.Font.Code
 pxrson_t.Text = "Coordinates Copy"
 pxrson_t.TextColor3 = Color3.fromRGB(255, 255, 255)
-pxrson_t.TextSize = 13
+pxrson_t.TextSize = math.floor(13 * pxrson_size_multiplier)
 pxrson_t.TextXAlignment = Enum.TextXAlignment.Left
 
 local pxrson_cb = Instance.new("TextButton")
@@ -117,7 +123,7 @@ pxrson_cb.Size = UDim2.new(0, 20, 1, 0)
 pxrson_cb.Font = Enum.Font.Code
 pxrson_cb.Text = "×"
 pxrson_cb.TextColor3 = Color3.fromRGB(255, 255, 255)
-pxrson_cb.TextSize = 14
+pxrson_cb.TextSize = math.floor(14 * pxrson_size_multiplier)
 pxrson_cb.AutoButtonColor = false
 
 pxrson_cb.MouseEnter:Connect(function()
@@ -152,12 +158,12 @@ local pxrson_bp = Instance.new("TextButton")
 pxrson_bp.Parent = pxrson_m
 pxrson_bp.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 pxrson_bp.BackgroundTransparency = 0.1
-pxrson_bp.Position = UDim2.new(0, 8, 0, 80)
-pxrson_bp.Size = UDim2.new(0, 70, 0, 20)
+pxrson_bp.Position = UDim2.new(0, 8, 0, math.floor(80 * pxrson_size_multiplier))
+pxrson_bp.Size = UDim2.new(0, math.floor(70 * pxrson_size_multiplier), 0, math.floor(20 * pxrson_size_multiplier))
 pxrson_bp.Font = Enum.Font.Code
 pxrson_bp.Text = "copy"
 pxrson_bp.TextColor3 = Color3.fromRGB(255, 255, 255)
-pxrson_bp.TextSize = 12
+pxrson_bp.TextSize = math.floor(12 * pxrson_size_multiplier)
 pxrson_bp.AutoButtonColor = false
 
 local pxrson_bpc = Instance.new("UICorner")
@@ -168,12 +174,12 @@ local pxrson_bt = Instance.new("TextButton")
 pxrson_bt.Parent = pxrson_m
 pxrson_bt.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 pxrson_bt.BackgroundTransparency = 0.1
-pxrson_bt.Position = UDim2.new(0, 82, 0, 80)
-pxrson_bt.Size = UDim2.new(0, 70, 0, 20)
+pxrson_bt.Position = UDim2.new(0, math.floor(82 * pxrson_size_multiplier), 0, math.floor(80 * pxrson_size_multiplier))
+pxrson_bt.Size = UDim2.new(0, math.floor(70 * pxrson_size_multiplier), 0, math.floor(20 * pxrson_size_multiplier))
 pxrson_bt.Font = Enum.Font.Code
 pxrson_bt.Text = "paste"
 pxrson_bt.TextColor3 = Color3.fromRGB(255, 255, 255)
-pxrson_bt.TextSize = 12
+pxrson_bt.TextSize = math.floor(12 * pxrson_size_multiplier)
 pxrson_bt.AutoButtonColor = false
 
 local pxrson_btc = Instance.new("UICorner")
