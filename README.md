@@ -49,9 +49,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK_CopyP
 <details>
 <summary><b>Method 2: Local Storage</b></summary>
 
-1. Download `anti_afk.lua`
-2. Place in your executor's autoexec folder
-3. Restart your executor
+1. download `anti_afk.lua` or `copy_pos.lua`
+2. place n your executors autoexec folder
+3. restart executor
+4. execute script
 
 </details>
 
