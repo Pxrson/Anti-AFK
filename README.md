@@ -1,6 +1,6 @@
 <div align="center">
 
-# Anti AFK
+# Anti AFK n Copy Pos
 
 <p>
   <img src="https://img.shields.io/badge/Platform-Roblox-00a2ff?style=for-the-badge&logo=roblox&logoColor=white" alt="Platform">
@@ -19,7 +19,7 @@
 Anti AFK
 ```lua
 -- discord: .pxrson
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK/refs/heads/main/script",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK_CopyPos/refs/heads/main/anti%20afk.lua",true))()
 ```
 Copy Pos
 ```lua
