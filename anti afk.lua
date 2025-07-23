@@ -1,4 +1,4 @@
--- dont steal this shit brutha
+-- dont steal this shit brutha so i added "pxrson_" to every local lol
 -- discord: .pxrson
 local pxrson_s = {
     p = game:GetService('Players'),
