@@ -17,7 +17,8 @@
 ## Quick Start
 
 ```lua
-loadstring(game:HttpGet("https://gitea.com/Pxrson/AntiAFK/raw/branch/main/AntiAFK.lua/anti_afk.lua"))()
+-- discord: .pxrson
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK/refs/heads/main/script",true))()
 ```
 
 ## Installation
@@ -26,8 +27,9 @@ loadstring(game:HttpGet("https://gitea.com/Pxrson/AntiAFK/raw/branch/main/AntiAF
 <summary><b>Method 1: Direct Execution</b></summary>
 
 ```lua
--- execute 
-loadstring(game:HttpGet("https://gitea.com/Pxrson/AntiAFK/raw/branch/main/AntiAFK.lua/anti_afk.lua"))()
+-- execute
+-- discord: .pxrson
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK/refs/heads/main/script",true))()
 ```
 
 </details>
