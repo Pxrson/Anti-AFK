@@ -14,7 +14,7 @@
 
 ---
 
-## Quick Start
+## If you already know how 2 do it
 
 Anti AFK
 ```lua
@@ -26,7 +26,7 @@ Copy Pos
 -- discord: .pxrson
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK_CopyPos/refs/heads/main/copy%20pos.lua",true))()
 ```
-## Installation
+## Installation and Help
 
 <details>
 <summary><b>Method 1: Direct Execution</b></summary>
