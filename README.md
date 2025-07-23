@@ -16,13 +16,14 @@
 
 ## Quick Start
 
-anti afk
+Anti AFK
 ```lua
 -- discord: .pxrson
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK/refs/heads/main/script",true))()
 ```
-copy pos
+Copy Pos
 ```lua
+-- discord: .pxrson
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK_CopyPos/refs/heads/main/copy%20pos.lua",true))()
 ```
 ## Installation
@@ -30,10 +31,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK_CopyP
 <details>
 <summary><b>Method 1: Direct Execution</b></summary>
 
+Anti AFK
 ```lua
 -- execute
 -- discord: .pxrson
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK/refs/heads/main/script",true))()
+```
+Copy Pos
+```lua
+-- execute
+-- discord: .pxrson
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxrson/Anti-AFK_CopyPos/refs/heads/main/copy%20pos.lua",true))()
 ```
 
 </details>
